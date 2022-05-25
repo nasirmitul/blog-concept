@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary: #9a94ff;
+    --secondary: #C5C2FB;
+    --dark: #2E2E2E;
+    --light: #efeefc;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: min(1700px, 95%);
+    margin: auto;
+}
+
+.blog {
+    height: 100vh;
+    /* overflow: hidden; */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+}
+
+nav .nav-left ul,
+nav .nav-right .right-items ul {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+}
+
+nav .nav-left ul a,
+nav .nav-right .right-items ul a {
+    color: var(--dark);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+nav .logo a {
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--dark);
+}
+
+nav .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+nav .nav-right .search {
+    height: 60px;
+    width: 70px;
+    background: var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+nav .nav-right .search a i {
+    color: var(--light);
+    font-size: .9rem;
+}
+
+.nav-bottom-divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(46, 46, 46, 0.2);
+    /* margin-bottom: 70px; */
+}
+
+.tabs{
+    display: flex;
+}
+
+.tab-cont {
+    min-width: 180px;
+    height: calc(100vh - 121px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 100px;
+}
+
+.tab-cont button {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: left;
+    position: relative;
+    color: rgba(46, 46, 46, 0.6);
+    font-family: 'Roboto Flex', sans-serif;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.tab-cont button.active {
+    color: var(--dark);
+    font-weight: 500;
+}
+
+.tab-content {
+    height: 100%;
+    float: left;
+    animation: anime 1s;
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.contents{
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.contents .left-content{
+    max-width: 70%;
+    margin-top: 30px;
+}
+
+.contents .left-content .date{
+    font-size: .8rem;
+    font-weight: 600;
+    color: rgba(46, 46, 46, 0.5);
+    margin-bottom: 25px;
+}
+
+.contents .left-content .date span{
+    font-size: 2rem;
+    color: red;
+    margin: 0 5px;
+}
+
+.contents .left-content .title{
+    font-size: 4rem;
+    line-height: 65px;
+    color: #2E2E2E;
+    margin-bottom: 50px;
+}
+
+.contents .left-content img{
+    width: calc(100% - 150px);
+    height: 35%;
+    object-fit: cover;
+}
+
+.contents .left-content .social {
+    display: flex;
+    gap: 40px;
+    position: absolute;
+    bottom: 40px;
+}
+
+.contents .left-content .social li a{
+    color: var(--dark);
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.contents .center-divider{
+    height: calc(100vh - 121px);
+    width: 1px;
+    background: rgba(46, 46, 46, 0.2);
+    position: relative;
+    margin: 0 100px;
+}
+
+.contents .right-content{
+    max-width: 20%;
+    margin-top: 50px;
+}
+
+.contents .right-content .circle{
+    height: 13px;
+    width: 13px;
+    background: #006C5E;
+    border-radius: 50%;
+    margin-bottom: 40px;
+}
+
+.contents .right-content .title h5{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2E2E2E;
+    margin-bottom: 40px;
+}
+
+.contents .right-content .des p{
+    font-size: .9rem;
+    font-weight: 400;
+    color: rgba(46, 46, 46, 0.8);
+    margin-bottom: 40px;
+    line-height: 30px;
+}
+
+.contents .right-content .inquiry{
+    display: flex;
+    position: absolute;
+    bottom: 40px;
+}
+
+.contents .right-content .inquiry a{
+    color: var(--dark);
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+
+@keyframes anime {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Flex:opsz,wght@8..144,200;8..144,300;8..144,400;8..144,500;8..144,600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section class="blog">
+        <nav class="container">
+            <div class="nav-left">
+                <ul>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Most Popular</a></li>
+                </ul>
+            </div>
+            <div class="logo">
+                <a href="#">rebuni</a>
+            </div>
+            <div class="nav-right">
+                <div class="right-items">
+                    <ul>
+                        <li><a href="#">My account</a></li>
+                        <li><a href="#">My Cart</a></li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+            </div>
+        </nav>
+        <div class="nav-bottom-divider"></div>
+
+
+
+        <div class="blog-sec container">
+            <div class="tabs">
+                <div class="tab-cont">
+                    <button class="but active" onclick="tabs(event, 'tab1')">01</button>
+                    <button class="but" onclick="tabs(event, 'tab2')">02</button>
+                    <button class="but" onclick="tabs(event, 'tab3')">03</button>
+                    <button class="but" onclick="tabs(event, 'tab4')">04</button>
+                </div>
+                <div class="tab-content active" id="tab1">
+                    <div class="contents">
+                        <div class="left-content">
+                            <p class="date">20 January 2022 <span>.</span> Blog</p>
+                            <h1 class="title">We create a <br> modern beautiful <br> photo.</h1>
+                            <img src="img/nature.jpg" alt="">
+
+                            <ul class="social">
+                                <li><a href="#">FaceBook</a></li>
+                                <li><a href="#">Twitter</a></li>
+                                <li><a href="#">Instagram</a></li>
+                            </ul>
+                        </div>
+                        <div class="center-divider"></div>
+                        <div class="right-content">
+                            <div class="circle" style="background: #D68910;"></div>
+
+                            <div class="title">
+                                <h5>Air Drone</h5>
+                            </div>
+                            <div class="des">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quae, illum rerum ut
+                                    libero tempora dolorum nam aperiam quisquam quaerat, laudantium perferendis pariatur
+                                    consequatur? Facere ipsum blanditiis molestiae quod. 
+                                </p>
+                            </div>
+
+                            <div class="title">
+                                <h5>Knowledge</h5>
+                            </div>
+                            <div class="des">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam tempora nulla
+                                    quisquam.</p>
+                            </div>
+                            <div class="inquiry">
+                                <a href="#">Send your inquiry</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="tab2">
+                    <div class="contents">
+                        <div class="left-content">
+                            <p class="date">20 February 2022 <span>.</span> Blog</p>
+                            <h1 class="title">We create a <br> modern beautiful <br> photo.</h1>
+                            <img src="img/nature1.jpg" alt="">
+
+                            <ul class="social">
+                                <li><a href="#">FaceBook</a></li>
+                                <li><a href="#">Twitter</a></li>
+                                <li><a href="#">Instagram</a></li>
+                            </ul>
+                        </div>
+                        <div class="center-divider"></div>
+                        <div class="right-content">
+                            <div class="circle" style="background: #2980B9;"></div>
+
+                            <div class="title">
+                                <h5>Air Drone</h5>
+                            </div>
+                            <div class="des">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quae, illum rerum ut
+                                    libero tempora dolorum nam aperiam quisquam quaerat, laudantium perferendis pariatur
+                                    consequatur? Facere ipsum blanditiis molestiae quod. 
+                                </p>
+                            </div>
+
+                            <div class="title">
+                                <h5>Knowledge</h5>
+                            </div>
+                            <div class="des">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam tempora nulla
+                                    quisquam.</p>
+                            </div>
+                            <div class="inquiry">
+                                <a href="#">Send your inquiry</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="tab3">
+                    <div class="contents">
+                        <div class="left-content">
+                            <p class="date">20 March 2022 <span>.</span> Blog</p>
+                            <h1 class="title">We create a <br> modern beautiful <br> photo.</h1>
+                            <img src="img/nature2.jpg" alt="">
+
+                            <ul class="social">
+                                <li><a href="#">FaceBook</a></li>
+                                <li><a href="#">Twitter</a></li>
+                                <li><a href="#">Instagram</a></li>
+                            </ul>
+                        </div>
+                        <div class="center-divider"></div>
+                        <div class="right-content">
+                            <div class="circle" style="background: #E74C3C;"></div>
+
+                            <div class="title">
+                                <h5>Air Drone</h5>
+                            </div>
+                            <div class="des">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quae, illum rerum ut
+                                    libero tempora dolorum nam aperiam quisquam quaerat, laudantium perferendis pariatur
+                                    consequatur? Facere ipsum blanditiis molestiae quod. 
+                                </p>
+                            </div>
+
+                            <div class="title">
+                                <h5>Knowledge</h5>
+                            </div>
+                            <div class="des">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam tempora nulla
+                                    quisquam.</p>
+                            </div>
+                            <div class="inquiry">
+                                <a href="#">Send your inquiry</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="tab4">
+                    <div class="contents">
+                        <div class="left-content">
+                            <p class="date">20 April 2022 <span>.</span> Blog</p>
+                            <h1 class="title">We create a <br> modern beautiful <br> photo.</h1>
+                            <img src="img/nature3.jpg" alt="">
+
+                            <ul class="social">
+                                <li><a href="#">FaceBook</a></li>
+                                <li><a href="#">Twitter</a></li>
+                                <li><a href="#">Instagram</a></li>
+                            </ul>
+                        </div>
+                        <div class="center-divider"></div>
+                        <div class="right-content">
+                            <div class="circle"></div>
+
+                            <div class="title">
+                                <h5>Air Drone</h5>
+                            </div>
+                            <div class="des">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quae, illum rerum ut
+                                    libero tempora dolorum nam aperiam quisquam quaerat, laudantium perferendis pariatur
+                                    consequatur? Facere ipsum blanditiis molestiae quod. 
+                                </p>
+                            </div>
+
+                            <div class="title">
+                                <h5>Knowledge</h5>
+                            </div>
+                            <div class="des">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam tempora nulla
+                                    quisquam.</p>
+                            </div>
+                            <div class="inquiry">
+                                <a href="#">Send your inquiry</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
