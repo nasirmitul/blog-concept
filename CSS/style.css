@@ -53,6 +53,8 @@ nav .nav-right .right-items ul a {
     color: var(--dark);
     font-size: 1rem;
     font-weight: 600;
+    cursor: pointer;
+    z-index: 99;
 }
 
 nav .logo a {
@@ -104,6 +106,7 @@ nav .nav-right .search a i {
     justify-content: center;
     align-items: center;
     bottom: 100px;
+    top: 0px;
 }
 
 .tab-cont button {
